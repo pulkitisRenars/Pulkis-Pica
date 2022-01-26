@@ -1,7 +1,8 @@
 package gitUzdPD;
 
+import javax.swing.JOptionPane;
 
-	public class pasutijums{
+public class pasutijums{
 		public String sVards;
 		public String pizza;
 		public int pSkaits;
@@ -16,7 +17,14 @@ package gitUzdPD;
 			this.cena=price;
 	}
 	
-
+public void izvade() {
+	JOptionPane.showMessageDialog(null, "|   *Tavs sûtijums*   |\n"
+									  + "|   Tavs vârds: "+sVards+"   |\n"
+									  + "|   Pica: "+pizza+"   |\n"
+									  + "|   Skaits: "+pSkaits+"   |\n"
+									  + "|   Cena: !!"+cena+"!!   |\n"
+									  + "|   Tava adrese: "+adrese+"   |");
+}
 		
 	}
 	

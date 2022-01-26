@@ -7,6 +7,7 @@ public class picerijaa {
 	static pasutijums picca = null;
 	static piedevas piccaP = null;
 	
+	static boolean status = false;
 	
 	static pasutijums izveidotSutijumu() {
 		String name=null,  pName=null, adresse= null;
@@ -35,6 +36,7 @@ public class picerijaa {
 		default: JOptionPane.showInputDialog("Nav izvçlçta pica, nevar aprçíinât cenu, mçgini vçlreiz?");
 		
 		}
+		status=true;
 			picca = new pasutijums(name, pName, x, adresse, pricee);
 	return picca;
 	
@@ -75,6 +77,7 @@ public class picerijaa {
 		default: JOptionPane.showInputDialog("Nav izvçlçta pica, nevar aprçíinât cenu, mçgini vçlreiz?");
 		
 		}
+		status=true;
 		piccaP= new piedevas(extraPied, name, pName, x, adresse, pricee);
 		return piccaP;
 	}
@@ -84,7 +87,7 @@ public class picerijaa {
 	
 	public static void main(String[] args) {
 String izvele;
-boolean top;
+boolean top=false;
 do {
 	izvele = JOptionPane.showInputDialog("1-izveidot pasutijumu  | 2- Savs pasûtijums | x - beigt sutijumu");
 	switch(izvele) {
@@ -97,6 +100,16 @@ do {
 		}
 		break;
 	
+	case "2":
+		if(status==true) {
+if(top==true) {
+	
+}else {
+	picca.izvade();
+}
+		}
+		break;
+		
 	case "x": JOptionPane.showMessageDialog(null, "programma beidzas");
 	}
 }while(!izvele.equals("x"));
