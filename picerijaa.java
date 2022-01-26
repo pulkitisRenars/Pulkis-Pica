@@ -89,7 +89,7 @@ public class picerijaa {
 String izvele;
 boolean top=false;
 do {
-	izvele = JOptionPane.showInputDialog("1-izveidot pasutijumu  | 2- Savs pasûtijums | x - beigt sutijumu");
+	izvele = JOptionPane.showInputDialog("1-izveidot pasutijumu  | 2- Savs pasûtijums | 3- pasûtît sûtijumu | x - beigt sutijumu");
 	switch(izvele) {
 	case "1": 
 		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bûs piedevas? true/false"));
@@ -107,6 +107,17 @@ if(top==true) {
 }else {
 	picca.izvade();
 }
+		}
+		break;
+	case "3": 
+		if(status==true) {
+		if(top==true) {
+			JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+piccaP.pizza+" ar "+piccaP.extraPiedeva+" uz "+piccaP.adrese+".");
+		}else {
+		JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+picca.pizza+" uz "+picca.adrese+".");
+		}
+		}else {
+			JOptionPane.showMessageDialog(null, "Nav ievadîts sûtijums");
 		}
 		break;
 		
