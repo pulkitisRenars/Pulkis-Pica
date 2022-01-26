@@ -103,7 +103,7 @@ do {
 	case "2":
 		if(status==true) {
 if(top==true) {
-	
+	piccaP.izvadeP();
 }else {
 	picca.izvade();
 }

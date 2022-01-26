@@ -22,7 +22,7 @@ public void izvade() {
 									  + "|   Tavs vârds: "+sVards+"   |\n"
 									  + "|   Pica: "+pizza+"   |\n"
 									  + "|   Skaits: "+pSkaits+"   |\n"
-									  + "|   Cena: !!"+cena+"!!   |\n"
+									  + "|   Cena: !!"+cena+"`€!!   |\n"
 									  + "|   Tava adrese: "+adrese+"   |");
 }
 		

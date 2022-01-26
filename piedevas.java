@@ -1,5 +1,6 @@
 package gitUzdPD;
 
+import javax.swing.JOptionPane;
 
 public class piedevas extends pasutijums{	
 	public String extraPiedeva;
@@ -9,7 +10,14 @@ public class piedevas extends pasutijums{
 		this.extraPiedeva=topings;
 	}
 	
-	
+	public void izvadeP() {
+		JOptionPane.showMessageDialog(null, "|   *Tavs sûtijums*   |\n"
+										  + "|   Tavs vârds: "+sVards+"   |\n"
+										  + "|   Pica: "+pizza+"   |\n"
+										  + "|   Skaits: "+pSkaits+" ar "+extraPiedeva+" piedevâm   |\n"
+										  + "|   Cena: !!"+cena+"`€!!   |\n"
+										  + "|   Tava adrese: "+adrese+"   |");
+	}
 	
 	
 	
