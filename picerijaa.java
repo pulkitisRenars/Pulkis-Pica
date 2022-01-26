@@ -95,7 +95,7 @@ public class picerijaa {
 String izvele;
 boolean top=false;
 do {
-	izvele = JOptionPane.showInputDialog("1-izveidot pasutijumu  | 2- Savs pasûtijums | 3- pasûtît sûtijumu | x - beigt sutijumu");
+	izvele = JOptionPane.showInputDialog("1-izveidot pasûtijumu  | 2- Savs pasûtijums | 3- pasûtît sûtijumu | x - beigt sûtijumu");
 	switch(izvele) {
 	case "1": 
 		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bûs piedevas? +2EUR, true/false"));
