@@ -5,9 +5,17 @@ import javax.swing.JOptionPane;
 public class picerijaa {
 
 	static pasutijums izveidotSutijumu() {
-		
-		
-		return picca;
+		boolean p = false;
+		String name=null,  pName=null, adresse= null, extraPied;
+		int x=0, pricee=0;
+	
+		if(p==false) {
+			pasutijums picca = new pasutijums(name, pName, x, adresse, pricee);
+	
+	}else if(p == true) {
+		piedevas picca = new piedevas(extraPied, name, pName, x, adresse, pricee);
+	}
+			 return picca;
 	}
 	
 	
