@@ -83,7 +83,13 @@ public class picerijaa {
 	}
 	
 	
-	
+	public static void sutit(Boolean topp) {
+		if(topp==true) {
+			JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+piccaP.pizza+" ar "+piccaP.extraPiedeva+" uz "+piccaP.adrese+".");
+		}else {
+		JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+picca.pizza+" uz "+picca.adrese+".");
+		}
+	}
 	
 	public static void main(String[] args) {
 String izvele;
@@ -92,7 +98,7 @@ do {
 	izvele = JOptionPane.showInputDialog("1-izveidot pasutijumu  | 2- Savs pasûtijums | 3- pasûtît sûtijumu | x - beigt sutijumu");
 	switch(izvele) {
 	case "1": 
-		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bûs piedevas? true/false"));
+		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bûs piedevas? +2EUR, true/false"));
 		if(top==true) {
 			izveidotSutijumuP();
 		}else if (top ==false) {
@@ -111,13 +117,9 @@ if(top==true) {
 		break;
 	case "3": 
 		if(status==true) {
-		if(top==true) {
-			JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+piccaP.pizza+" ar "+piccaP.extraPiedeva+" uz "+piccaP.adrese+".");
+		sutit(top);
 		}else {
-		JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+picca.pizza+" uz "+picca.adrese+".");
-		}
-		}else {
-			JOptionPane.showMessageDialog(null, "Nav ievadîts sûtijums");
+			JOptionPane.showMessageDialog(null, "Nav ievadîts sûtijums, nevar pasûtît");
 		}
 		break;
 		
