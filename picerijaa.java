@@ -95,14 +95,18 @@ public class picerijaa {
 String izvele;
 boolean top=false;
 do {
-	izvele = JOptionPane.showInputDialog("1-izveidot pasūtijumu  | 2- Savs pasūtijums | 3- pasūtīt sūtijumu | 4 - | x - beigt s�tijumu");
+	izvele = JOptionPane.showInputDialog("1-izveidot pasūtijumu  | 2- Savs pasūtijums | 3- pasūtīt sūtijumu | 4 - pievienot e | x - beigt s�tijumu");
 	switch(izvele) {
 	case "1": 
+		if(status==false){
 		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai būs piedevas? +2EUR, true/false"));
 		if(top==true) {
 			izveidotSutijumuP();
 		}else if (top ==false) {
 			izveidotSutijumu();
+		}
+		}else{
+			JOPtionPane.showMessageDialog("Jau ir uztaisīts pasūtījums");
 		}
 		break;
 	
@@ -122,7 +126,15 @@ if(top==true) {
 			JOptionPane.showMessageDialog(null, "Nav ievadīts sūtijums, nevar pasūtīt");
 		}
 		break;
-		
+	case "4":
+		status=false;
+		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai būs piedevas? +2EUR, true/false"));
+		if(top==true) {
+			izveidotSutijumuP();
+		}else if (top ==false) {
+			izveidotSutijumu();
+		}
+		break;
 	case "x": JOptionPane.showMessageDialog(null, "programma beidzas");
 	}
 }while(!izvele.equals("x"));
