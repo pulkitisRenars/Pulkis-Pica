@@ -1,7 +1,7 @@
 # Pulkis-Pica
 Pārbaudes darbs ar Git darbībām
 ## Apraksts par programmu:
-Šī programma ir programma par picēriju, kur tu vari pasūtīt picu un uzlikt kādu picu vēlies un kādas piedevas.
+Šī programma ir programma par picēriju, kur tu vari pasūtīt picu un uzlikt kādu picu vēlies un kādas piedevas. :pizza:
 Šeit vēl tev jāievada Personas info un adrese uz kurieni tev "nosūtītu" picu
  - [x] Programma darbojas
  - [x] Veidotas metodes
