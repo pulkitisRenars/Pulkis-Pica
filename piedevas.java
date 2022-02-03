@@ -11,12 +11,12 @@ public class piedevas extends pasutijums{
 	}
 	
 	public void izvadeP() {
-		JOptionPane.showMessageDialog(null, "|   *Tavs sûtijums*   |\n"
+		JOptionPane.showMessageDialog(null, "|   *Tavs sÅ«tijums*   |\n"
 
-				  + "|   Tavs vârds: "+sVards+"   |\n"
+				  + "|   Tavs vÄrds: "+sVards+"   |\n"
 				  + "|   Pica: "+pizza+" ar"+extraPiedeva+" piedevu   |\n"
 				  + "|   Skaits: "+pSkaits+"   |\n"
-				  + "|   Cena: !!"+cena+"!!   |\n"
+				  + "|   Cena: !!"+cena+"â‚¬!!   |\n"
 				  + "|   Tava adrese: "+adrese+"   |");
 
 										 

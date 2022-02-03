@@ -18,11 +18,11 @@ public class pasutijums{
 	}
 	
 public void izvade() {
-	JOptionPane.showMessageDialog(null, "|   *Tavs sûtijums*   |\n"
-									  + "|   Tavs vârds: "+sVards+"   |\n"
+	JOptionPane.showMessageDialog(null, "|   *Tavs sÅ«tijums*   |\n"
+									  + "|   Tavs vÄrds: "+sVards+"   |\n"
 									  + "|   Pica: "+pizza+"   |\n"
 									  + "|   Skaits: "+pSkaits+"   |\n"
-									  + "|   Cena: !!"+cena+"`€!!   |\n"
+									  + "|   Cena: !!"+cena+"â‚¬!!   |\n"
 									  + "|   Tava adrese: "+adrese+"   |");
 }
 		

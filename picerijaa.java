@@ -13,27 +13,27 @@ public class picerijaa {
 		String name=null,  pName=null, adresse= null;
 		int x=1, pricee=0;
 		
-		name=JOptionPane.showInputDialog("Kads ir Jûsu vârds?");
+		name=JOptionPane.showInputDialog("Kads ir JÅ«su vÄrds?");
 		
-	pName=JOptionPane.showInputDialog("Kâdu picu vçlies? \n"
+	pName=JOptionPane.showInputDialog("KÄdu picu vÄ“lies? \n"
 			+ "Margarita \n"
-			+ "Hawajieğu \n"
+			+ "HawajieÅ¡u \n"
 			+ "Barbekju \n"
 			+ "Studentu");
 	
-		x=Integer.parseInt(JOptionPane.showInputDialog("Cik tâdas picas vçlçsies"));
+		x=Integer.parseInt(JOptionPane.showInputDialog("Cik tÄdas picas vÄ“lÄ“sies"));
 		
 		adresse=JOptionPane.showInputDialog("Ievadiet savu adresi?");
 		
 		switch(pName.toLowerCase()) {
 		case "margarita": pricee= 5*x;
 		break;
-		case "hawajieğu": pricee = 6*x;
+		case "hawajieÅ¡u": pricee = 6*x;
 			break;
 		case "barbekju": pricee= 10*x;
 		break;
 		case "studentu": pricee= 4*x;
-		default: JOptionPane.showInputDialog("Nav izvçlçta pica, nevar aprçíinât cenu, mçgini vçlreiz?");
+		default: JOptionPane.showInputDialog("Nav izvÄ“lÄ“ta pica, nevar aprÄ“Ä·inÄt cenu, mÄ“gini vÄ“lreiz?");
 		
 		}
 		status=true;
@@ -48,33 +48,33 @@ public class picerijaa {
 		String name=null,  pName=null, adresse= null, extraPied=null;
 		int x=0, pricee=2;
 		
-		name=JOptionPane.showInputDialog("Kads ir Jûsu vârds?");
+		name=JOptionPane.showInputDialog("Kads ir JÅ«su vards?");
 		
-	pName=JOptionPane.showInputDialog("Kâdu picu vçlies? \n"
+	pName=JOptionPane.showInputDialog("KÄdu picu vÄ“lies? \n"
 			+ "Margarita \n"
-			+ "Hawajieğu \n"
+			+ "HawajieÅ¡u \n"
 			+ "Barbekju \n"
 			+ "Studentu");
 	
-	extraPied=JOptionPane.showInputDialog("Kâdu picas piedevas vçlçsies? \n"
-			+ "Cepti sîpoli \n"
+	extraPied=JOptionPane.showInputDialog("KÄdu picas piedevu vÄ“lÄ“sies? \n"
+			+ "Cepti sÄ«poli \n"
 			+ "Extra siers \n"
 			+ "Extra peperoni \n"
-			+ "Ananâsi");
+			+ "AnanÄsi");
 	
-		x=Integer.parseInt(JOptionPane.showInputDialog("Cik tâdas picas vçlçsies"));
+		x=Integer.parseInt(JOptionPane.showInputDialog("Cik tÄdas picas vÄ“lÄ“sies"));
 		
 		adresse=JOptionPane.showInputDialog("Ievadiet savu adresi?");
 		
 		switch(pName.toLowerCase()) {
 		case "margarita": pricee= 5*x;
 		break;
-		case "hawajieğu": pricee = 6*x;
+		case "hawajieÅ¡u": pricee = 6*x;
 			break;
 		case "barbekju": pricee= 10*x;
 		break;
 		case "studentu": pricee= 4*x;
-		default: JOptionPane.showInputDialog("Nav izvçlçta pica, nevar aprçíinât cenu, mçgini vçlreiz?");
+		default: JOptionPane.showInputDialog("Nav izvÄ“lÄ“ta pica, nevar aprÄ“Ä·inÄt cenu, megini vÄ“lreiz?");
 		
 		}
 		status=true;
@@ -85,9 +85,9 @@ public class picerijaa {
 	
 	public static void sutit(Boolean topp) {
 		if(topp==true) {
-			JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+piccaP.pizza+" ar "+piccaP.extraPiedeva+" uz "+piccaP.adrese+".");
+			JOptionPane.showMessageDialog(null, "Tavs sÅ«tijums tika pasÅ«tÄ«ts: \n"+piccaP.pizza+" ar "+piccaP.extraPiedeva+" uz "+piccaP.adrese+".");
 		}else {
-		JOptionPane.showMessageDialog(null, "Tavs sûtijums tika pasûtîts: \n"+picca.pizza+" uz "+picca.adrese+".");
+		JOptionPane.showMessageDialog(null, "Tavs sï¿½tijums tika pasÅ«tÄ«ts: \n"+picca.pizza+" uz "+picca.adrese+".");
 		}
 	}
 	
@@ -95,10 +95,10 @@ public class picerijaa {
 String izvele;
 boolean top=false;
 do {
-	izvele = JOptionPane.showInputDialog("1-izveidot pasûtijumu  | 2- Savs pasûtijums | 3- pasûtît sûtijumu | x - beigt sûtijumu");
+	izvele = JOptionPane.showInputDialog("1-izveidot pasÅ«tijumu  | 2- Savs pasÅ«tijums | 3- pasÅ«tÄ«t sÅ«tijumu | 4 - | x - beigt sï¿½tijumu");
 	switch(izvele) {
 	case "1": 
-		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bûs piedevas? +2EUR, true/false"));
+		top =Boolean.parseBoolean(JOptionPane.showInputDialog("Vai picai bÅ«s piedevas? +2EUR, true/false"));
 		if(top==true) {
 			izveidotSutijumuP();
 		}else if (top ==false) {
@@ -119,7 +119,7 @@ if(top==true) {
 		if(status==true) {
 		sutit(top);
 		}else {
-			JOptionPane.showMessageDialog(null, "Nav ievadîts sûtijums, nevar pasûtît");
+			JOptionPane.showMessageDialog(null, "Nav ievadÄ«ts sÅ«tijums, nevar pasÅ«tÄ«t");
 		}
 		break;
 		
