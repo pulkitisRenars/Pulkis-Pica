@@ -9,3 +9,4 @@ Pārbaudes darbs ar Git darbībām
  - [x] Funkcionalitāte strādā
  - [x] Pievienota papildus metode
  
+![Metamā kauliņa attels](https://media-cdn.tripadvisor.com/media/photo-s/1b/59/24/ba/pizza.jpg)
